@@ -113,62 +113,106 @@ nav {
                   /* main */
 
              /* assinaturas */
-.h1-assinaturas{
-  text-align: center;
-  margin-top: 20px;
-}
+             .tabela-preco
+             {
+                 display: flex;
+                 flex-wrap: wrap;
+                 justify-content: space-around;
+                 width: min(1600px, 100%);
+                 margin:  auto;
+                 margin-top: 50px;
+             }
+             
+             .card-preco
+             {
+                 flex:1;
+                 max-width: 335px;
+                 background-color: rgba(206, 206, 206, 0.486);
+                 margin: 20px 10px;
+                 text-align: center;
+                 cursor: pointer;
+                 overflow: hidden;
+                 color: #2d2d2d;
+                 transition: .3s linear;
+                 border-radius: 50px;
+             }
+             
+             .card-preco:hover .card-preco-header
+             {
+                 box-shadow: 0 0 0 26em #000000;
+             
+             }
+             .card-preco:hover {
+                transform: scale(1.1);
+                transition: all 0.5s;
 
-.container-assinaturas{
-  display: flex;
-  gap: 84px;
-  justify-content: center;
- 
-
-  
-  
-}
-
-
-
-.assinatura1
-{
-    background-color: black;
-    width: 300px;
-    height: 400px;
-    margin-top: 50px;
-    box-shadow: 0 0 10px #7a767235;
-    border-radius: 50px;
-    
-    
-}
-
-
-
-
-.assinatura2
-{
-    background-color: #050505;
-    width: 300px;
-    height: 400px;
-    margin-top: 50px;
-    box-shadow: 0 0 10px #7a767235;
-    border-radius: 50px;
-}
-
-
-
-
-.assinatura3
-{
-    background-color: black;
-    width: 300px;
-    height: 400px;
-    margin-top: 50px;
-    box-shadow: 0 0 10px #7a767235;
-    border-radius: 50px;
-}
-
-
+             }
+             
+             .card-preco-header
+             {
+                 background-color: #000000;
+                 display: inline-block;
+                 color: #fff;
+                 padding: 12px 30px;
+                 border-radius: 0 0 20px 20px;
+                 font-size: 16px;
+                 text-transform: uppercase;
+                 font-weight: 600;
+                 transition: .4s line;
+             }
+             
+             .preco
+             {
+                 font-size: 70px;
+                 color: #000000;
+                 margin: 40px 0;
+                 transition: .2s linear;
+             }
+             
+             
+             .preco sup, .preco span
+             {
+                 font-size: 22px;
+                 font-weight: 700;
+             }
+             
+             .card-preco:hover, .card-preco:hover .preco
+             {
+                 color: #fff;
+             }
+             
+             .card-preco li
+             {
+                 font-size: 16px;
+                 padding: 10px 0;
+                 text-transform: uppercase;
+             }
+             
+             .btn
+             {
+                 display: inline-block;
+                 margin-bottom: 40px;
+                 margin-top: 80px;
+                 border: 2px solid #000000;
+                 color: #000000;
+                 padding: 18px 40px;
+                 border-radius:  8px;
+                 text-transform:  uppercase;
+                 font-weight: 500;
+                 transition:  .3s linear;
+                 text-decoration: none;
+             }
+             
+             .btn:hover
+             {
+                 background-color: #000000;
+                 color: #fff; 
+                 text-decoration: none;
+                 transform: scale(1.1);
+                 transition: all 0.5s;
+             }
+             
+            
 
 
 
